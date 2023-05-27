@@ -93,7 +93,7 @@ WHERE deaths.continent is not null
 ORDER BY 1, 2, 3
 
 
-
+--USING CTE
 WITH PopVsVac (continent, location, date, population, new_vaccinations, RollingPeopleVaccinated)
 AS (
 SELECT deaths.continent, deaths.location, deaths.date, deaths.population, vacs.new_vaccinations , 
